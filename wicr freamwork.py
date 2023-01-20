@@ -56,7 +56,7 @@ print("[LOADING] Searching if connected to any network")
 
 try:
     request = requests.get(url, timeout=timeout)
-    print("[-] Please disconnect your internet for this operation to work, try again later"), exit()
+    print("[-] Please disconnect your internet for this operation to work, try again later"), input(""), exit()
 
 except (requests.ConnectionError, requests.Timeout) as exception:
     print("[LOADING] Loading program..."), time.sleep(1)
